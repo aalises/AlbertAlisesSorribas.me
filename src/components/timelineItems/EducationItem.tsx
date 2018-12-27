@@ -5,8 +5,6 @@ export default ({headingIcon, period, place, iconURL, university, GPA, degree, s
         <i className={`fa ${headingIcon}`}></i>
     </div>
     <div className="timeline-content">
-        <p className="heading">{period}</p>
-        <div className="box">
             <div className="columns">
                 <div className="column">
                     <figure className="image is-96x96">
@@ -14,6 +12,7 @@ export default ({headingIcon, period, place, iconURL, university, GPA, degree, s
                     </figure>
                 </div>
                 <div className="column is-four-fifths">
+                    <p className="heading">{period}</p>
                     <h1 className="title is-size-5">{degree}</h1>
                     <h2 className="subtitle is-size-6">{university} , <i>{place}</i> </h2>
                     <div className="tags has-addons">
@@ -32,6 +31,5 @@ export default ({headingIcon, period, place, iconURL, university, GPA, degree, s
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>)
