@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": false,
+    "target": "es2018",
+    "module": "esnext",
+    "jsx": "react",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "types": [
+      "node",
+      "webpack-env"
+    ]
+  }
+}

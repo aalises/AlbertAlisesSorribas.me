@@ -1,0 +1,36 @@
+{
+  "name": "personal-page",
+  "license": "MIT",
+  "staticPath": "public",
+  "scripts": {
+    "dev": "rm -rf dist && parcel serve index.html -p 4200",
+    "build": "rm -rf dist && cross-env NODE_ENV=production parcel build index.html --public-url ./ --no-source-maps",
+    "postbuild": "react-snap"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.10",
+    "@types/react": "^16.7.7",
+    "@types/react-dom": "^16.0.10",
+    "@types/webpack-env": "^1.13.6",
+    "autoprefixer": "^9.3.1",
+    "bulma": "^0.7.2",
+    "bulma-divider": "^2.0.1",
+    "bulma-timeline": "^3.0.0",
+    "parcel-bundler": "^1.10.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
+    "react-snap": "^1.23.0",
+    "sass": "^1.15.1",
+    "tslint": "^5.8.0",
+    "tslint-react": "^3.2.0",
+    "typescript": "^3.1.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.1.1",
+    "parcel-plugin-static-files-copy": "^1.2.4"
+  }
+}
