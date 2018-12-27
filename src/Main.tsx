@@ -6,7 +6,8 @@ import Education from "./sections/education";
 import Skills from "./sections/skills";
 import Honors from "./sections/honors";
 
-import Sidebar from "./Sidebar"
+import Sidebar from "./components/Sidebar"
+import Footer from "./components/Footer";
 
 export default () =>{
 
@@ -29,6 +30,7 @@ export default () =>{
                                 </div>
                             </div>
                         </div>
+                    <Footer/>   
                     </div>
                 </div>
             </section>

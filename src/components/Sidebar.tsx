@@ -1,5 +1,5 @@
 import * as React from "react";
-import SidebarData from "./data/sidebar";
+import SidebarData from "../data/sidebar";
 
 export default () => {
     return (
