@@ -7,14 +7,15 @@
 @import "./bulma-override.sass"
 @import "../../node_modules/bulma/bulma.sass"
 
-@media screen and (max-width: 769px)
-  .reverse-column-order
-    display: flex
-    flex-direction: column-reverse
+.reverse-column-order
+  display: flex
+  flex-direction: column-reverse
 
 .is-underline
   text-decoration: underline
 
 .media-link
   color: #666666 !important
+  &:hover
+    color: $grey-darker !important
 
