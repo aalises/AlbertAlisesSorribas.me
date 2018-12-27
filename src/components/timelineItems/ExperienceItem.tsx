@@ -7,15 +7,14 @@ export default ({period, headingIcon, place, title, company, iconURL, responsabi
                 <i className={`fa ${headingIcon}`}></i>
             </div>
             <div className="timeline-content">
-                <p className="heading">{period}</p>
-                <div className="box">
                     <div className="columns">
                         <div className="column">
-                            <figure className="image is-64x64">
+                            <figure className="image is-96x96">
                                 <img src={`assets/icons/${iconURL}`} />
                             </figure> 
                         </div>
                         <div className="column is-four-fifths">
+                            <p className="heading">{period}</p>
                             <h1 className="title is-size-5">{title}</h1>
                             <h6 className="subtitle is-size-6">{company}</h6>
                             <h6 className="subtitle is-size-6"><i>{place}</i></h6>
@@ -36,7 +35,6 @@ export default ({period, headingIcon, place, title, company, iconURL, responsabi
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }
