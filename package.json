@@ -4,7 +4,8 @@
   "staticPath": "public",
   "scripts": {
     "dev": "rm -rf dist && parcel serve index.html -p 4200",
-    "build": "rm -rf dist && cross-env NODE_ENV=production parcel build index.html --public-url ./ --no-source-maps && cp -r dist docs"  
+    "build": "rm -rf dist && cross-env NODE_ENV=production parcel build index.html --public-url ./ --no-source-maps",
+    "postbuild": "rsync -r dist/ docs"  
   },
   "dependencies": {
     "@types/node": "^10.12.10",
