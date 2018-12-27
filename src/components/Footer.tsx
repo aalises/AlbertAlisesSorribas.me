@@ -5,7 +5,7 @@ export default () => {
         <footer className="footer">
             <div className="content">
                 <p>
-                <strong>Thanks for reading!</strong> If you have any inquiry or project, contact me at <a href="mailto:albert.alises@gmail.com">albert.alises@gmail.com</a>
+                <strong>Thanks for reading!</strong> If you have any inquiry of project do not hesitate to contact me <span role="img" aria-label="smile">😃</span>
                 </p>
             </div>
         </footer>

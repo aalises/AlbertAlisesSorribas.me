@@ -5,8 +5,8 @@ import Experience from "./sections/experience";
 import Education from "./sections/education";
 import Skills from "./sections/skills";
 import Honors from "./sections/honors";
-
-import Sidebar from "./components/Sidebar"
+import Contact from "./sections/contact";
+import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import SectionBar from "./components/SectionBar";
 
@@ -25,6 +25,7 @@ export default () =>{
                                     <Education/>
                                     <Skills/>
                                     <Honors/>
+                                    <Contact/>
                                 </div>
                             </div>
                         </div>
