@@ -4,7 +4,8 @@ const sections = [
     'Experience',
     'Education',
     'Skills',
-    'Honors / Awards'
+    'Honors / Awards',
+    'Contact'
 ]
 
 export default sections;
