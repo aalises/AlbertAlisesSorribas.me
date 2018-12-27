@@ -8,6 +8,7 @@ import Honors from "./sections/honors";
 
 import Sidebar from "./components/Sidebar"
 import Footer from "./components/Footer";
+import SectionBar from "./components/SectionBar";
 
 export default () =>{
 
@@ -16,12 +17,9 @@ export default () =>{
                 <div className="hero-body" style={{paddingTop: '6rem'}}>
                     <div className="container">
                         <div className="columns">
-                            <div className="column is-2">
-                                <Sidebar/>
-                            </div>
-                            <div className="is-divider-vertical is-hidden-touch" />
-                            <div className="column is-three-quarters">
+                            <div className="column is-four-fifths is-offset-1">
                                 <Header name="Albert Alises Sorribas" role="Software Developer"/>
+                                <SectionBar/>
                                 <div className="column is-full">
                                     <Experience/>
                                     <Education/>

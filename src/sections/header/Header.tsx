@@ -4,7 +4,7 @@ import MediaLinks from '../medialinks';
 export default ({name, role}) => {
     return (
       <div id="section-Header" className="container has-text-centered">
-        <div className="column is-three-quarters">
+        <div className="column is-four-fifths">
           <div className="columns is-vcentered reverse-column-order">
               <div className="column">
                 <h1 className="title is-size-1">
