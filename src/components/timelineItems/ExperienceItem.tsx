@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default ({period, headingIcon, place, title, company, iconURL, responsabilities, technologies, accomplishments}) => {
+export default ({period, headingIcon, place, title, company, iconURL, responsabilities, technologies, accomplishments, additional_content}) => {
     return(
         <div className="timeline-item">
             <div className="timeline-marker is-icon is-48x48">
@@ -31,6 +31,9 @@ export default ({period, headingIcon, place, title, company, iconURL, responsabi
                                 <ul>
                                     {accomplishments.map((el, idx) => <li key={`acc-${idx}`}>{el}</li>)}                                    
                                 </ul>
+                                <div style={{paddingTop: '3rem'}}>
+                                    {additional_content}
+                                </div>
                             </div>
                         </div>
                     </div>

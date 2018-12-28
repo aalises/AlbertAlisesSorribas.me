@@ -29,7 +29,8 @@ data (DICOM / NIFTI / Fibers) or connectomics (Chord diagrams, matrices etc)</di
         <div>Implemented a <b>CD/CI system</b> for the Front-End products of QMENTA + Testing</div>,
         <div><b>Published a novel Virtual Reality application</b> for visualizing neuroimaging data, available <a href="https://www.oculus.com/experiences/rift/1547231975368367/" target="_blank">here</a></div>,
         <div><b>Wrote 2 articles on Medium/Dev.to</b> about <a href="https://medium.com/qmenta-tech-blog/preact-typescript-parcel-redux-zero-rebuilding-the-qmenta-front-end-focusing-on-performance-a7c879c5b288" target="_blank">the technologies used for the Front-End</a> and <a href="https://dev.to/aalises/dealing-with-asynchrony-when-writing-end-to-end-tests-with-puppeteer--jest-n37" target="_blank">Dealing with Asynchrony on e2e tests</a></div>,
-    ]
+    ],
+    additional_content: null
 }
 
 const BCN_MEDTECH : ExperienceData = {
@@ -57,7 +58,31 @@ const BCN_MEDTECH : ExperienceData = {
         <div><b>Lead developer</b> of an application that helps doctors come to a better diagnosis on Twin-to-Twin Transfussion Syndrome</div>,
         <div>Delivered a functional prototype at IDIBAPS meeting the goals of the project</div>,
         <div>Presented a poster at the CARS (Computer Assisted Radiology and Surgery) conference about Deep Brain Stimulation</div>,
-    ]
+    ],
+    additional_content: <div className="tile is-ancestor">
+        <div className="tile is-5 is-vertical is-parent">
+            <div className="tile is-child">
+                <figure className="image">
+                    <img src={`assets/img/testsclinical.jpg`} />
+                    <figcaption>Testing the application on a Clinical Environment at la Maternitat Hospital.</figcaption>
+                </figure>
+            </div>
+            <div className="tile is-child">
+                <figure className="image">
+                    <img src={`assets/img/ThreeFetoscopes.png`} />
+                    <figcaption>Model of the placenta with the fetoscopes.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div className="tile is-parent">
+            <div className="tile is-child">
+                <figure className="image">
+                    <img src={`assets/img/testtracker.jpg`} />
+                    <figcaption>Testing the Qt/MITK C++ Application with the Aurora EM Tracker</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
 }
 
 const KCL: ExperienceData = {
@@ -81,7 +106,21 @@ const KCL: ExperienceData = {
         <div><b>Developed</b> a fully functional prototype for Hypoplastic Left Heart Syndrome surgery planning delivered on time</div>,
         <div>With this prototype, we managed to secure a grant on 2016, of the NHS (National Health Institute), for continuing the project up to 2 years</div>,
         <div>Wrote my Bachelor's thesis on the results of the project and received major distinction and honors for it</div>
-    ]
+    ],
+    additional_content: <div className="columns">
+        <div className="column is-two-thirds no-padding">
+            <figure className="image">
+                <img src={`assets/img/usingapp.jpg`} />
+                <figcaption>Clinical staff from the Evelina London Hospital of Children testing the Application.</figcaption>
+            </figure>
+        </div>
+        <div className="column no-padding">
+            <figure className="image">
+                <img src={`assets/img/screnshot_KCL.png`} />
+                <figcaption>Render of ultrasound Heart Data in VR.</figcaption>
+            </figure>
+        </div>
+    </div>
 }
 
 const dataObject : TimelineDataObject[] = [

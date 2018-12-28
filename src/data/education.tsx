@@ -18,7 +18,13 @@ const UPF_DEGREE : EducationData = {
         <div>Computer Sciences Courses on Fundamentals</div>,
         <div>Sound and Image Processing courses, with emphasis on Machine Learning</div>,
         <div>Fundamental Courses on Mathemathics and Physics</div>
-    ]
+    ],
+    additional_content: <div className="column is-three-quarters">
+        <figure className="image">
+            <img src={`assets/img/graduated.jpg`} />
+            <figcaption>We were pretty happy when graduating.</figcaption>
+        </figure>
+    </div>
 }
 
 const RMIT_DEGREE : EducationData = {
@@ -37,7 +43,12 @@ const RMIT_DEGREE : EducationData = {
     courses: [
         <div>Courses on Artificial Intelligence, Computer Graphics</div>,
         <div>A project on VR/AR using Unity3D, structured with Git</div>,
-    ]
+    ],
+    additional_content: <div className="column is-full">
+    <figure className="image">
+        <img src={`assets/img/easternpoint.jpg`} />
+    </figure>
+    </div>
 }
 
 const UPF_MASTER : EducationData = {
@@ -56,7 +67,13 @@ const UPF_MASTER : EducationData = {
         <div>Courses on Machine Learning, Complexity Science, Advanced Signal Analysis, Surgery Planning</div>,
         <div>Academic Seminars on Machine Learning on Medicine and other topics organized by BCN MedTech</div>,
         <div>Python and MATLAB Programming for Biomedical sciences</div>
-    ]
+    ],
+    additional_content: <div className="column is-full">
+    <figure className="image">
+        <img src={`assets/img/paperpresentation.jpg`} />
+        <figcaption>Presenting a paper on my results from the work and master thesis at the CARS 2017 conference.</figcaption>
+    </figure>
+</div>
 }
 const dataObject : TimelineDataObject[] = [
     {id: 'header', medium: true, data: 'Now'},

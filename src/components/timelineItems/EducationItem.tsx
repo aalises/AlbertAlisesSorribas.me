@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default ({headingIcon, period, place, iconURL, university, GPA, degree, specialization, courses}) => (<div className="timeline-item">
+export default ({headingIcon, period, place, iconURL, university, GPA, degree, specialization, courses, additional_content}) => (<div className="timeline-item">
     <div className="timeline-marker is-icon is-48x48">
         <i className={`fa ${headingIcon}`}></i>
     </div>
@@ -28,6 +28,9 @@ export default ({headingIcon, period, place, iconURL, university, GPA, degree, s
                         <ul>
                             {courses.map((el, idx) => <li key={`course-${idx}`}>{el}</li>)}
                         </ul>
+                        <div style={{paddingTop: '3rem'}}>
+                            {additional_content}
+                        </div>
                     </div>
                 </div>
             </div>
