@@ -68,11 +68,29 @@ const UPF_MASTER : EducationData = {
         <div>Academic Seminars on Machine Learning on Medicine and other topics organized by BCN MedTech</div>,
         <div>Python and MATLAB Programming for Biomedical sciences</div>
     ],
-    additional_content: <div className="column is-full">
-    <figure className="image">
-        <img src={`assets/img/paperpresentation.jpg`} />
-        <figcaption>Presenting a paper on my results from the work and master thesis at the CARS 2017 conference.</figcaption>
-    </figure>
+    additional_content: <div className="tile is-ancestor">
+    <div className="tile is-parent is-12">
+        <div className="tile is-child is-7">
+            <figure className="image">
+                <img src={`assets/img/paperpresentation.jpg`} />
+                <figcaption>Presenting a paper on my results from the work and master thesis at the CARS 2017 conference.</figcaption>
+            </figure>
+        </div>
+        <div className="tile is-parent is-vertical">
+            <div className="tile">
+            <figure className="image">
+                <img src={`assets/img/StaticSetup3.jpg`} />
+                <figcaption>Project on Augmented Reality Tracking for fetal interventions.</figcaption>
+            </figure>
+        </div>
+        <div className="tile">
+            <figure className="image">
+                <img src={`assets/img/simulation_brain.gif`} />
+                <figcaption>Simulation of Deep Brain Stimulation Electrode insertion using C++.</figcaption>
+            </figure>
+        </div>
+        </div>
+    </div>
 </div>
 }
 const dataObject : TimelineDataObject[] = [

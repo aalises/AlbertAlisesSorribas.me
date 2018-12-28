@@ -27,10 +27,44 @@ data (DICOM / NIFTI / Fibers) or connectomics (Chord diagrams, matrices etc)</di
     accomplishments: [
         <div><b>Lead developer</b> of the QMENTA Platform Front-End and NICTS (Neuro Imaging Clinical Trial Suite)</div>,
         <div>Implemented a <b>CD/CI system</b> for the Front-End products of QMENTA + Testing</div>,
-        <div><b>Published a novel Virtual Reality application</b> for visualizing neuroimaging data, available <a href="https://www.oculus.com/experiences/rift/1547231975368367/" target="_blank">here</a></div>,
+        <div><b>Published a novel Virtual Reality application</b> for visualizing neuroimaging data, available on the Oculus Rift Store, <a href="https://www.oculus.com/experiences/rift/1547231975368367/" target="_blank">here</a></div>,
         <div><b>Wrote 2 articles on Medium/Dev.to</b> about <a href="https://medium.com/qmenta-tech-blog/preact-typescript-parcel-redux-zero-rebuilding-the-qmenta-front-end-focusing-on-performance-a7c879c5b288" target="_blank">the technologies used for the Front-End</a> and <a href="https://dev.to/aalises/dealing-with-asynchrony-when-writing-end-to-end-tests-with-puppeteer--jest-n37" target="_blank">Dealing with Asynchrony on e2e tests</a></div>,
     ],
-    additional_content: null
+    additional_content: <div className="tile is-ancestor">
+         <div className="tile is-parent is-12 is-vertical">
+            <div className="tile is-child is-12">
+                <figure className="image">
+                    <img src={`assets/img/QMENTA1.png`} />
+                    <figcaption>Register view of the QMENTA Platform (Front-end with React).</figcaption>
+                </figure>
+            </div>
+            <div className="tile is-parent" style={{padding: '3rem 0rem !important'}}>
+                <div className="tile is-child is-6">
+                    <figure className="image">
+                        <img src={`assets/img/VR1.png`} />
+                        <figcaption>Screenshots of Brain Fibers inside the BrainVis VR application.</figcaption>
+                    </figure>
+                </div>
+                <div className="tile is-child is-6">
+                    <figure className="image">
+                        <img src={`assets/img/VR2.png`} />
+                    </figure>
+                </div>
+            </div>
+            <div className="tile is-child">
+                <figure className="image">
+                    <img src={`assets/img/AMIScreenFE.png`} />
+                    <figcaption>Screenshot of the visualizer I developed using Javascript/Three.JS</figcaption>
+                </figure>
+            </div>
+            <div className="tile is-child">
+                <figure className="image">
+                    <img src={`assets/img/QMENTA2.png`} />
+                    <figcaption>Screenshot of the main view of the QMENTA Platform (Front-end with React / Preact)</figcaption>
+                </figure>
+            </div>
+         </div>
+    </div>
 }
 
 const BCN_MEDTECH : ExperienceData = {

@@ -28,7 +28,7 @@ export default ({headingIcon, period, place, iconURL, university, GPA, degree, s
                         <ul>
                             {courses.map((el, idx) => <li key={`course-${idx}`}>{el}</li>)}
                         </ul>
-                        <div style={{paddingTop: '3rem'}}>
+                        <div className="box" style={{paddingTop: '3rem'}}>
                             {additional_content}
                         </div>
                     </div>
