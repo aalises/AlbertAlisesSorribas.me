@@ -27,6 +27,21 @@ interface EducationData {
     additional_content?: any
 }
 
+interface SkillsData {
+    title: string,
+    color: string,
+    data: {
+        label: string,
+        value: number
+    }[]
+}
+
+interface HonorsData {
+    title: string,
+    issues: string,
+    description: any
+}
+
 interface TimelineProps {
     itemType: 'experience' | 'education',
     data: TimelineDataObject[]

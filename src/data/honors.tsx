@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const honors = [{
+const honors : HonorsData[] = [{
     title: "Honors in the Bachelor's Thesis: Virtual Reality Visualisation of 3D Moving Cardiac Sequences"  
     issued: 'Universitat Pompeu Fabra, 2016'
     description: <p>Awarded Honors in the Bachelor's thesis on 2016 for my research work on Virtual Reality carried on King's College London</p>
