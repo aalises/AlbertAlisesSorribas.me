@@ -1,17 +1,18 @@
-import * as React from "react";
+import React, { lazy, Suspense} from "react";
 import Header from './sections/header';
+import Loader from "./components/Loader";
 
-import Experience from "./sections/experience";
-import Education from "./sections/education";
-import Skills from "./sections/skills";
-import Honors from "./sections/honors";
-import Contact from "./sections/contact";
+const Experience = lazy(() => import("./sections/experience"));
+const Education = lazy(() => import("./sections/education"));
+const Skills = lazy(() => import("./sections/skills"));
+const Honors = lazy(() => import("./sections/honors"));
+const Contact = lazy(() => import("./sections/contact"));
+
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import SectionBar from "./components/SectionBar";
 
 export default () =>{
-
         return(
             <section className="hero is-default is-bold">
                 <div className="hero-body" style={{paddingTop: '6rem'}}>
@@ -21,11 +22,13 @@ export default () =>{
                                 <Header name="Albert Alises Sorribas" role="Software Developer"/>
                                 <SectionBar/>
                                 <div className="column is-full">
+                                <Suspense fallback={<Loader size={45} color={'#D3D3D3'}/>}>
                                     <Experience/>
                                     <Education/>
                                     <Skills/>
                                     <Honors/>
                                     <Contact/>
+                                </Suspense>
                                 </div>
                             </div>
                         </div>
