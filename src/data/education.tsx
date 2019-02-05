@@ -1,4 +1,3 @@
-import { TimelineDataObject, EducationData } from "@/types";
 import * as React from "react";
 
 const UPF_DEGREE : EducationData = {

@@ -44,7 +44,7 @@ const Other = [
     {label: 'LaTeX', value: 75}
 ]
 
-const dataObject = [
+const dataObject  : SkillsData[] = [
     {title: 'Front-End Web Development', data: Frontend, color: 'info'},
     {title: 'Back-End Web Development', data: Backend, color: 'success'},
     {title: 'Testing and CI/CD', data: TestingCI, color: 'warning' },
