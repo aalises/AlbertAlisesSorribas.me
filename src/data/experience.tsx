@@ -1,6 +1,5 @@
 
 import * as React from "react";
-import { TimelineDataObject, ExperienceData } from "@/types";
 
 const QMENTA : ExperienceData = {
     period: 'July 2017 - Now',

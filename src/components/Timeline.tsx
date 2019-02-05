@@ -1,6 +1,5 @@
 import * as React from "react";
 import TimelineItem from "./timelineItems/TimelineItem";
-import { TimelineProps } from "@/types";
 
 export default ({itemType, data} : TimelineProps) => (
 <div className="timeline">
