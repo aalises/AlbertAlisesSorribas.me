@@ -1,11 +1,3 @@
+const sections = ['Header', 'Experience', 'Education', 'Skills', 'Honors / Awards', 'Contact']
 
-const sections = [
-    'Header',
-    'Experience',
-    'Education',
-    'Skills',
-    'Honors / Awards',
-    'Contact'
-]
-
-export default sections;
+export default sections
