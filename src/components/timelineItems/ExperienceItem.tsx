@@ -1,17 +1,19 @@
-import * as React from 'react'
+import * as React from 'react';
+import Img from 'gatsby-image';
 
 export default ({
+  id,
   period,
   headingIcon,
   place,
   title,
   company,
-  iconURL,
   responsabilities,
   technologies,
   accomplishments,
   additional_content,
-}) => (
+  images,
+}: any) => (
   <div className="timeline-item">
     <div className="timeline-marker is-icon is-48x48">
       <i className={`fa ${headingIcon}`} />
@@ -19,9 +21,11 @@ export default ({
     <div className="timeline-content">
       <div className="columns">
         <div className="column">
-          <figure className="image is-96x96">
-            <img src={`assets/icons/${iconURL}`} />
-          </figure>
+          {images ? (
+            <figure className="image is-96x96">
+              <Img fixed={images[`${id}_logo`].childImageSharp.fixed} />
+            </figure>
+          ) : null}
         </div>
         <div className="column is-four-fifths">
           <p className="heading">{period}</p>
@@ -36,13 +40,11 @@ export default ({
               {responsabilities.map((el, idx) => (
                 <li key={`resp-${idx}`}>{el}</li>
               ))}
-              ))}
             </ul>
             <h2 className="title is-size-6 has-text-grey-dark">Technologies</h2>
             <ul>
               {technologies.map((el, idx) => (
                 <li key={`tech-${idx}`}>{el}</li>
-              ))}
               ))}
             </ul>
             <h2 className="title is-size-6 has-text-grey-dark">Accomplishments</h2>
@@ -52,11 +54,11 @@ export default ({
               ))}
             </ul>
             <div className="box" style={{ paddingTop: '3rem' }}>
-              {additional_content}
+              {additional_content(images)}
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-)
+);

@@ -1,6 +1,6 @@
-import * as React from 'react'
+import * as React from 'react';
 
-export default ({ data }) => (
+const ContactList = ({ data }: any[]) => (
   <React.Fragment>
     {data.map(el => (
       <div key={`contact-${el.icon}`}>
@@ -11,4 +11,6 @@ export default ({ data }) => (
       </div>
     ))}
   </React.Fragment>
-)
+);
+
+export default ContactList;

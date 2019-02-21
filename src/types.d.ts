@@ -1,54 +1,54 @@
-import { Component } from "react";
+import { Component } from 'react';
 
 //Data
 interface ExperienceData {
-    period: string,
-    title: string,
-    company: string,
-    headingIcon: string,
-    place: string,
-    iconURL: string,
-    responsabilities: any[],
-    technologies: any[],
-    accomplishments: any[],
-    additional_content?: any
+  period: string;
+  title: string;
+  company: string;
+  headingIcon: string;
+  place: string;
+  iconURL: string;
+  responsabilities: any[];
+  technologies: any[];
+  accomplishments: any[];
+  additional_content?: any;
 }
 
 interface EducationData {
-    headingIcon: string, 
-    period: string, 
-    place: string,
-    iconURL: string, 
-    university: string, 
-    GPA: string, 
-    degree: string, 
-    specialization: any[], 
-    courses: any[],
-    additional_content?: any
+  headingIcon: string;
+  period: string;
+  place: string;
+  iconURL: string;
+  university: string;
+  GPA: string;
+  degree: string;
+  specialization: any[];
+  courses: any[];
+  additional_content?: any;
 }
 
 interface SkillsData {
-    title: string,
-    color: string,
-    data: {
-        label: string,
-        value: number
-    }[]
+  title: string;
+  color: string;
+  data: {
+    label: string;
+    value: number;
+  }[];
 }
 
 interface HonorsData {
-    title: string,
-    issues: string,
-    description: any
+  title: string;
+  issues: string;
+  description: any;
 }
 
 interface TimelineProps {
-    itemType: 'experience' | 'education',
-    data: TimelineDataObject[]
+  itemType: 'experience' | 'education';
+  data: TimelineDataObject[];
 }
 
 interface TimelineDataObject {
-    id: 'header' | 'item',
-    medium? : boolean
-    data: any
+  id: 'header' | 'item';
+  medium?: boolean;
+  data: any;
 }

@@ -1,6 +1,12 @@
-import * as React from 'react'
+import * as React from 'react';
 
-export default ({ title, issued, description }) => (
+interface HonorsItemProps {
+  title: string;
+  issued: string;
+  description: string;
+}
+
+const HonorsItem = ({ title, issued, description }: HonorsItemProps) => (
   <div className="box">
     <div className="column is-full">
       <h1 className="title is-size-5">{title}</h1>
@@ -10,4 +16,6 @@ export default ({ title, issued, description }) => (
       </div>
     </div>
   </div>
-)
+);
+
+export default HonorsItem;

@@ -9,4 +9,4 @@ module.exports = {
   siteDescription: 'Personal Website of Albert Alises Sorribas',
   author: 'Albert Alises Sorribas',
   ogLanguage: 'en_US',
-}
+};

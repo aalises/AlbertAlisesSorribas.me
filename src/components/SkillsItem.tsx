@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-export default ({ title, data, color }) => (
+export default ({ title, data, color }: any) => (
   <div className="column is-half">
     <div className="card">
       <div className="card-content skills-content">
@@ -23,4 +23,4 @@ export default ({ title, data, color }) => (
       </div>
     </div>
   </div>
-)
+);

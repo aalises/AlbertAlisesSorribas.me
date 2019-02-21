@@ -1,19 +1,18 @@
-import React from 'react'
-import Header from '../sections/header'
+import React from 'react';
+import Header from './Header';
 
-import Experience from '../sections/experience'
-import Education from '../sections/education'
-import Skills from '../sections/skills'
-import Honors from '../sections/honors'
-import Contact from '../sections/contact'
+import Experience from './Experience';
+import Education from './Education';
+import Skills from './Skills';
+import Honors from './Honors';
+import Contact from './Contact';
 
-import Sidebar from '../components/Sidebar'
-import Footer from '../components/Footer'
-import SectionBar from '../components/SectionBar'
+import Footer from '../components/Footer';
+import SectionBar from '../components/SectionBar';
 
-import '../styles/index.sass'
+import '../styles/index.sass';
 
-export default () => (
+const Main = () => (
   <section className="hero is-default is-bold">
     <div className="hero-body" style={{ paddingTop: '6rem' }}>
       <div className="container">
@@ -34,4 +33,6 @@ export default () => (
       </div>
     </div>
   </section>
-)
+);
+
+export default Main;

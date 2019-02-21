@@ -1,5 +1,5 @@
-import * as React from 'react'
-import SidebarData from '../data/sidebar'
+import * as React from 'react';
+import SidebarData from '../data/sidebar';
 
 export default () => (
   <div className="breadcrumb is-centered has-bullet-separator">
@@ -8,7 +8,10 @@ export default () => (
         <li key={`sidebar-${el}`}>
           <a
             onClick={() =>
-              window.scroll({ top: document.getElementById(`section-${el}`).offsetTop, behavior: 'smooth' })
+              window.scroll({
+                top: document.getElementById(`section-${el}`).offsetTop,
+                behavior: 'smooth',
+              })
             }
             className="media-link"
           >
@@ -18,4 +21,4 @@ export default () => (
       ))}
     </ul>
   </div>
-)
+);
