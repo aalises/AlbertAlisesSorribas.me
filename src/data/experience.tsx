@@ -52,12 +52,7 @@ const QMENTA: ExperienceData = {
     <div key="qmenta-acc-3">
       <b>Published a novel Virtual Reality application</b> for visualizing neuroimaging data, available on the Oculus
       Rift Store,{' '}
-      <a
-        href="https://www.oculus.com/experiences/rift/1547231975368367/"
-        target="_blank"
-        without
-        rel="noopener noreferrer"
-      >
+      <a href="https://www.oculus.com/experiences/rift/1547231975368367/" target="_blank" rel="noopener noreferrer">
         here
       </a>
     </div>,
@@ -66,7 +61,6 @@ const QMENTA: ExperienceData = {
       <a
         href="https://medium.com/qmenta-tech-blog/preact-typescript-parcel-redux-zero-rebuilding-the-qmenta-front-end-focusing-on-performance-a7c879c5b288"
         target="_blank"
-        without
         rel="noopener noreferrer"
       >
         the technologies used for the Front-End
@@ -75,7 +69,6 @@ const QMENTA: ExperienceData = {
       <a
         href="https://dev.to/aalises/dealing-with-asynchrony-when-writing-end-to-end-tests-with-puppeteer--jest-n37"
         target="_blank"
-        without
         rel="noopener noreferrer"
       >
         Dealing with Asynchrony on e2e tests
