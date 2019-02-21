@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Img from 'gatsby-image';
-import { withPrefix } from 'gatsby';
 
 const UPF_DEGREE: EducationData = {
   id: 'UPF_DEGREE',
@@ -11,14 +10,14 @@ const UPF_DEGREE: EducationData = {
   GPA: '8.22 / 10 (2nd of promotion)',
   degree: 'Telecommunication Engineering, Computer Sciences',
   specialization: [
-    <div>Image Processing and Machine Learning</div>,
-    <div>Sound and Signal Processing</div>,
-    <div>Developing Full Stack applications</div>,
+    <div key="spec-degree-1">Image Processing and Machine Learning</div>,
+    <div key="spec-degree-2">Sound and Signal Processing</div>,
+    <div key="spec-degree-3">Developing Full Stack applications</div>,
   ],
   courses: [
-    <div>Computer Sciences Courses on Fundamentals</div>,
-    <div>Sound and Image Processing courses, with emphasis on Machine Learning</div>,
-    <div>Fundamental Courses on Mathemathics and Physics</div>,
+    <div key="spec-course-1">Computer Sciences Courses on Fundamentals</div>,
+    <div key="spec-course-2">Sound and Image Processing courses, with emphasis on Machine Learning</div>,
+    <div key="spec-course-3">Fundamental Courses on Mathemathics and Physics</div>,
   ],
   additional_content: data => (
     <div className="column is-three-quarters">
@@ -39,13 +38,13 @@ const RMIT_DEGREE: EducationData = {
   GPA: '9.12 / 10',
   degree: 'Computer Sciences',
   specialization: [
-    <div>Artificial Intelligence and algorithm programming in C, ProLog</div>,
-    <div>Computer Graphics using Javascript / Three.JS</div>,
-    <div>Virtual/Augmented Reality project using Unity3D and Vuforia + Google Cardboard</div>,
+    <div key="spec-rmit-1">Artificial Intelligence and algorithm programming in C, ProLog</div>,
+    <div key="spec-rmit-2">Computer Graphics using Javascript / Three.JS</div>,
+    <div key="spec-rmit-3">Virtual/Augmented Reality project using Unity3D and Vuforia + Google Cardboard</div>,
   ],
   courses: [
-    <div>Courses on Artificial Intelligence, Computer Graphics</div>,
-    <div>A project on VR/AR using Unity3D, structured with Git</div>,
+    <div key="course-rmit-1">Courses on Artificial Intelligence, Computer Graphics</div>,
+    <div key="course-rmit-2">A project on VR/AR using Unity3D, structured with Git</div>,
   ],
   additional_content: data => (
     <div className="column is-full">
@@ -65,13 +64,17 @@ const UPF_MASTER: EducationData = {
   GPA: '9.15 / 10',
   degree: 'Msc. in Computational Biomedical Engineering',
   specialization: [
-    <div>Algorithm programming in Python</div>,
-    <div>Application programming and Computer Graphics for Medical Data</div>,
+    <div key="spec-master-1">Algorithm programming in Python</div>,
+    <div key="spec-master-2">Application programming and Computer Graphics for Medical Data</div>,
   ],
   courses: [
-    <div>Courses on Machine Learning, Complexity Science, Advanced Signal Analysis, Surgery Planning</div>,
-    <div>Academic Seminars on Machine Learning on Medicine and other topics organized by BCN MedTech</div>,
-    <div>Python and MATLAB Programming for Biomedical sciences</div>,
+    <div key="course-master-1">
+      Courses on Machine Learning, Complexity Science, Advanced Signal Analysis, Surgery Planning
+    </div>,
+    <div key="course-master-2">
+      Academic Seminars on Machine Learning on Medicine and other topics organized by BCN MedTech
+    </div>,
+    <div key="course-master-3">Python and MATLAB Programming for Biomedical sciences</div>,
   ],
   additional_content: data => (
     <div className="tile is-ancestor">
