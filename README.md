@@ -1,8 +1,9 @@
-# AlbertAlisesSorribas.github.io
+# Albert Alises Sorribas Personal Page
 
-https://aalises.github.io/AlbertAlisesSorribas.me/
+[https://www.albertalises.me
+](https://www.albertalises.me/)
 
-Simple Personal Page created with GatsbyJS
+Simple Personal Page created with **GatsbyJS**
 
 ## Technologies ##
 
@@ -10,3 +11,4 @@ Simple Personal Page created with GatsbyJS
 - Bulma CSS + SASS
 - Gatsby
 - Typescript
+- GraphQL
