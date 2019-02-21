@@ -50,6 +50,7 @@ const RMIT_DEGREE: EducationData = {
     <div className="column is-full">
       <figure className="image">
         <Img fluid={data['RMIT_DEGREE_1'].childImageSharp.fluid} />
+        <figcaption>We also had some time to travel around the land down under</figcaption>
       </figure>
     </div>
   ),
