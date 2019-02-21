@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/AlbertAlisesSorribas.me',
+  pathPrefix: '',
   siteTitle: 'aalises.me',
   siteTitleAlt: 'aalises.me',
   siteTitleShort: 'aalises.me',
