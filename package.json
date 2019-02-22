@@ -21,7 +21,7 @@
     "bulma": "^0.7.2",
     "bulma-divider": "^2.0.1",
     "bulma-timeline": "^3.0.0",
-    "gatsby": "^2.0.114",
+    "gatsby": "^2.1.13",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.13",
     "gatsby-plugin-offline": "^2.0.24",
@@ -31,8 +31,9 @@
     "gatsby-source-filesystem": "^2.0.21",
     "gatsby-transformer-sharp": "^2.1.9",
     "node-sass": "^4.11.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-spring": "^8.0.7"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

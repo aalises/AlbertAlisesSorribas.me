@@ -2,6 +2,7 @@ import * as React from 'react';
 import MediaLinks from './MediaLinks';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { useSpring, animated } from 'react-spring';
 
 const dataQuery = graphql`
   query {
@@ -16,6 +17,10 @@ const dataQuery = graphql`
 `;
 
 const Header = ({ name, role }: any) => {
+  const animation = useSpring({
+    to: { opacity: 1, marginTop: '0rem' },
+    from: { opacity: 0, marginTop: '1rem' },
+  });
   return (
     <StaticQuery
       query={dataQuery}
@@ -24,8 +29,12 @@ const Header = ({ name, role }: any) => {
           <div className="column is-four-fifths">
             <div className="columns is-vcentered reverse-column-order">
               <div className="column">
-                <h1 className="title is-size-1">{name}</h1>
-                <h2 className="subtitle is-size-4 has-text-grey">{role}</h2>
+                <animated.h1 className="title is-size-1" style={animation}>
+                  {name}
+                </animated.h1>
+                <animated.h2 style={animation} className="subtitle is-size-4 has-text-grey">
+                  {role}
+                </animated.h2>
                 <MediaLinks />
               </div>
               <div className="column">
