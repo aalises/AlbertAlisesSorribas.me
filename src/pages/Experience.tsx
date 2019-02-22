@@ -2,7 +2,7 @@ import * as React from 'react';
 import SectionHeader from '../components/SectionHeader';
 import Timeline from '../components/Timeline';
 import ExperienceData from '../data/experience';
-import { StaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 //GraphQL Data
 export const fluidImage = graphql`
@@ -82,18 +82,12 @@ const imageDataExperience = graphql`
 `;
 
 const Experience = () => {
+  const data = useStaticQuery(imageDataExperience);
   return (
-    <StaticQuery
-      query={imageDataExperience}
-      render={data => {
-        return (
-          <React.Fragment>
-            <SectionHeader title="Experience" icon="fa-briefcase" />
-            <Timeline itemType="experience" data={ExperienceData} images={data} />
-          </React.Fragment>
-        );
-      }}
-    />
+    <React.Fragment>
+      <SectionHeader title="Experience" icon="fa-briefcase" />
+      <Timeline itemType="experience" data={ExperienceData} images={data} />
+    </React.Fragment>
   );
 };
 

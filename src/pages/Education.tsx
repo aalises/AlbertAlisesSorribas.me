@@ -2,7 +2,7 @@ import * as React from 'react';
 import SectionHeader from '../components/SectionHeader';
 import Timeline from '../components/Timeline';
 import EducationData from '../data/education';
-import { StaticQuery } from 'gatsby';
+import { useStaticQuery } from 'gatsby';
 import { graphql } from 'gatsby';
 
 const imageDataEducation = graphql`
@@ -35,18 +35,12 @@ const imageDataEducation = graphql`
 `;
 
 const Education = () => {
+  const data = useStaticQuery(imageDataEducation);
   return (
-    <StaticQuery
-      query={imageDataEducation}
-      render={data => {
-        return (
-          <React.Fragment>
-            <SectionHeader title="Education" icon="fa-book" />
-            <Timeline itemType="education" data={EducationData} images={data} />
-          </React.Fragment>
-        );
-      }}
-    />
+    <React.Fragment>
+      <SectionHeader title="Education" icon="fa-book" />
+      <Timeline itemType="education" data={EducationData} images={data} />
+    </React.Fragment>
   );
 };
 
