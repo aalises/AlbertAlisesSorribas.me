@@ -19,7 +19,7 @@ const dataQuery = graphql`
 const Header = ({ name, role }: any) => {
   const animation = useSpring({
     to: { opacity: 1, marginTop: '0rem' },
-    from: { opacity: 0, marginTop: '1rem' },
+    from: { opacity: 0, marginTop: '1.3rem' },
   });
   return (
     <StaticQuery

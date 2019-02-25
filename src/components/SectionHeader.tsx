@@ -9,7 +9,7 @@ interface SectionHeaderProps {
 export default ({ icon, title }: SectionHeaderProps) => {
   const animation = useSpring({
     to: { opacity: 1, marginLeft: '0rem' },
-    from: { opacity: 0, marginLeft: '2rem' },
+    from: { opacity: 0, marginLeft: '1.5rem' },
   });
 
   return (
