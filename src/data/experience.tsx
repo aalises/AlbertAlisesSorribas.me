@@ -25,14 +25,14 @@ const QMENTA: ExperienceData = {
   ],
   technologies: [
     <div key="qmenta-tech-1">
-      <b>Front-End:</b> React 16.5 (Suspense/Lazy API, Context API), Typescript, Redux/Redux-Zero, React Router v4,
-      SASS, Styled Components, Parcel, Webpack, Formik...
+      <b>Front-End:</b> React 16.7 (Suspense/Lazy API, Context API, React Hooks), Typescript, Redux/Redux-Zero, React
+      Router, Post-CSS (Sass), Styled Components, Parcel, Webpack, GatsbyJS...
     </div>,
     <div key="qmenta-tech-2">
       <b>CI/CD:</b> Jenkins pipelines, Docker, Docker Compose, Kubernetes{' '}
     </div>,
     <div key="qmenta-tech-3">
-      <b>Testing:</b> Jest/Puppeteer (Legacy), Cypress (Current), PyTest{' '}
+      <b>Testing:</b> Jest + Puppeteer (Legacy E2E), Cypress (Current E2E), Jest + Enzyme (Unit), PyTest{' '}
     </div>,
     <div key="qmenta-tech-4">
       <b>Virtual Reality:</b> Unity Engine, Oculus Rift, C#
