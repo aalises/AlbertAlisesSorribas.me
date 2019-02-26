@@ -1,1 +1,1 @@
-{"name":"aalises.me","short_name":"aalises.me","description":"Personal Website of Albert Alises Sorribas","start_url":"","display":"standalone","icons":[{"src":"/static/favicon.ico","sizes":"120x120","type":"image/ico"}]}
+{"name":"aalises.me","short_name":"aalises.me","description":"Personal Website of Albert Alises Sorribas","start_url":"","display":"standalone","icons":[{"src":"favicon.ico","sizes":"120x120","type":"image/ico"}]}
