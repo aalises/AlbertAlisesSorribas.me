@@ -50,10 +50,9 @@ const QMENTA: ExperienceData = {
       Implemented a <b>CD/CI system</b> for the Front-End products of QMENTA + Testing
     </div>,
     <div key="qmenta-acc-3">
-      <b>Published a novel Virtual Reality application</b> for visualizing neuroimaging data, available on the Oculus
-      Rift Store,{' '}
+      <b>Published a novel Virtual Reality application</b> for visualizing neuroimaging data,
       <a href="https://www.oculus.com/experiences/rift/1547231975368367/" target="_blank" rel="noopener noreferrer">
-        here
+        available on the Oculus Rift Store
       </a>
     </div>,
     <div key="qmenta-acc-4">
