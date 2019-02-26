@@ -16,6 +16,7 @@ import '../styles/index.sass';
 const Main = () => (
   <section className="hero is-default is-bold">
     <Helmet>
+      <html lang="en" />
       <meta charSet="utf-8" />
       <title>Hi, I'm Albert Alises</title>
       <meta name="description" content="Personal Website of Albert Alises Sorribas" />
