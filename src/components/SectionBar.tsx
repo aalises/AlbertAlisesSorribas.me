@@ -2,7 +2,7 @@ import * as React from 'react';
 import SidebarData from '../data/sidebar';
 
 export default () => (
-  <div style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }} className="breadcrumb is-centered has-bullet-separator">
+  <div className="breadcrumb is-centered has-bullet-separator">
     <ul className="is-size-6">
       {SidebarData.map(el => (
         <li key={`sidebar-${el}`}>
