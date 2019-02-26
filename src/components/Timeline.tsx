@@ -18,7 +18,7 @@ export default ({ itemType, data, images }: TimelineProps) => {
         if (el.id === 'header') {
           return (
             <header key={`timeline-header-${itemType}-${idx}`} className="timeline-header">
-              <span className={`tag ${el.medium ? 'is-medium' : ''} has-background-grey has-text-white`}>
+              <span className={`tag ${el.medium ? 'is-medium' : ''} has-background-grey-dark has-text-white`}>
                 {el.data}
               </span>
             </header>
