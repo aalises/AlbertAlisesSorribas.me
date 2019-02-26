@@ -29,7 +29,7 @@ module.exports = {
         display: 'standalone',
         icons: [
           {
-            src: '/static/favicon.ico',
+            src: 'favicon.ico',
             sizes: '120x120',
             type: 'image/ico',
           },
