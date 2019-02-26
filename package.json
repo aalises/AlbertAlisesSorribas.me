@@ -25,6 +25,7 @@
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.13",
     "gatsby-plugin-offline": "^2.0.24",
+    "gatsby-plugin-react-helmet": "^3.0.7",
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-sharp": "^2.0.17",
     "gatsby-plugin-typescript": "^2.0.7",
@@ -33,6 +34,7 @@
     "node-sass": "^4.11.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
     "react-spring": "^8.0.7"
   },
   "devDependencies": {

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import { Helmet } from 'react-helmet';
 
 import Experience from './Experience';
 import Education from './Education';
@@ -14,6 +15,11 @@ import '../styles/index.sass';
 
 const Main = () => (
   <section className="hero is-default is-bold">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Hi, I'm Albert Alises</title>
+      <meta name="description" content="Personal Website of Albert Alises Sorribas" />
+    </Helmet>
     <div className="hero-body" style={{ paddingTop: '6rem' }}>
       <div className="container">
         <div className="columns">
