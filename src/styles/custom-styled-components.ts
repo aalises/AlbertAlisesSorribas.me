@@ -20,9 +20,11 @@ const SpecialFontText = styled.div`
 const FixedHeaderContainer = styled.div`
   position: fixed;
   width: 100%;
-  padding-bottom: 3rem;
   background: aliceblue;
   min-width: 388px;
+  section {
+    padding-bottom: 3rem;
+  }
 `;
 
 const ContentContainer = styled.div`
