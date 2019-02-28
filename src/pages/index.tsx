@@ -21,24 +21,20 @@ const Main = () => (
       <title>Hi, I'm Albert Alises</title>
       <meta name="description" content="Personal Website of Albert Alises Sorribas" />
     </Helmet>
-    <div className="hero-body" style={{ paddingTop: '6rem' }}>
-      <div className="container">
-        <div className="columns">
-          <div className="column is-four-fifths is-offset-1">
-            <Header name="Albert Alises Sorribas" role="Software Developer" />
-            <SectionBar />
-            <div className="column is-full">
-              <Experience />
-              <Education />
-              <Skills />
-              <Honors />
-              <Contact />
-            </div>
-          </div>
-        </div>
-        <Footer />
+    <div>
+      <Header name="Albert Alises Sorribas" role="Software Developer" />
+    </div>
+    <div>
+      <div className="column is-three-fifths is-offset-2">
+        <SectionBar />
+        <Experience />
+        <Education />
+        <Skills />
+        <Honors />
+        <Contact />
       </div>
     </div>
+    <Footer />
   </section>
 );
 
