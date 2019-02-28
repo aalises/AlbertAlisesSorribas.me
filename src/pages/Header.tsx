@@ -30,10 +30,10 @@ const Header = ({ name, role }: any) => {
           <MarginContainer margin="4rem 5% 0 0" className="column">
             <div className="columns is-vcentered reverse-column-order">
               <div className="column">
-                <animated.h1 className="title is-size-1" style={animation}>
+                <animated.h1 className="title is-size-1 title-background" style={animation}>
                   {name}
                 </animated.h1>
-                <animated.h2 style={animation} className="subtitle is-size-4 has-text-grey">
+                <animated.h2 style={animation} className="subtitle-background subtitle is-size-4 has-text-grey-dark">
                   {role}
                 </animated.h2>
                 <MediaLinks />

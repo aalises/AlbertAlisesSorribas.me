@@ -17,7 +17,7 @@ import '../styles/index.sass';
 
 const HeaderBackgroundImage = graphql`
   query {
-    background: file(relativePath: { eq: "paperpresentation.jpg" }) {
+    background: file(relativePath: { eq: "background_cloud.jpg" }) {
       ...fluidImage
     }
   }
