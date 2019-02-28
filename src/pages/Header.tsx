@@ -31,6 +31,7 @@ const Header = ({ name, role }: any) => {
             <div className="columns is-vcentered reverse-column-order">
               <div className="column">
                 <animated.h1 className="title is-size-1 title-background" style={animation}>
+                  <span style={{ fontWeight: '300' }}>Hi! I'm </span>
                   {name}
                 </animated.h1>
                 <animated.h2 style={animation} className="subtitle-background subtitle is-size-4 has-text-grey-dark">
