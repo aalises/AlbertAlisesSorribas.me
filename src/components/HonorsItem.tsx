@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { SpecialFontText } from '../styles/custom-styled-components';
 interface HonorsItemProps {
   title: string;
   issued: string;
@@ -11,9 +11,9 @@ const HonorsItem = ({ title, issued, description }: HonorsItemProps) => (
     <div className="column is-full">
       <h1 className="title is-size-5">{title}</h1>
       <h2 className="subtitle is-size-6">{issued}</h2>
-      <div className="content" style={{ fontSize: '14px' }}>
+      <SpecialFontText fontSize="14px" className="content">
         {description}
-      </div>
+      </SpecialFontText>
     </div>
   </div>
 );

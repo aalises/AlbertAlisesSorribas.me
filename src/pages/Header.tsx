@@ -3,6 +3,7 @@ import MediaLinks from './MediaLinks';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { useSpring, animated } from 'react-spring';
+import { MarginContainer } from '../styles/custom-styled-components';
 
 const dataQuery = graphql`
   query {
@@ -26,13 +27,13 @@ const Header = ({ name, role }: any) => {
       query={dataQuery}
       render={data => (
         <div id="section-Header" className="container has-text-centered">
-          <div className="column is-four-fifths">
+          <MarginContainer margin="4rem 5% 0 0" className="column">
             <div className="columns is-vcentered reverse-column-order">
               <div className="column">
-                <animated.h1 className="title is-size-1" style={animation}>
+                <animated.h1 className="title is-size-1 title-background" style={animation}>
                   {name}
                 </animated.h1>
-                <animated.h2 style={animation} className="subtitle is-size-4 has-text-grey">
+                <animated.h2 style={animation} className="subtitle-background subtitle is-size-4 has-text-grey-dark">
                   {role}
                 </animated.h2>
                 <MediaLinks />
@@ -43,7 +44,7 @@ const Header = ({ name, role }: any) => {
                 </figure>
               </div>
             </div>
-          </div>
+          </MarginContainer>
         </div>
       )}
     />

@@ -2,8 +2,7 @@ import * as React from 'react';
 import SectionHeader from '../components/SectionHeader';
 import Timeline from '../components/Timeline';
 import EducationData from '../data/education';
-import { useStaticQuery } from 'gatsby';
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const imageDataEducation = graphql`
   query {

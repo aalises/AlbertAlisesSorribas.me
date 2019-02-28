@@ -1,8 +1,9 @@
 import * as React from 'react';
 import SidebarData from '../data/sidebar';
+import { FixedBar } from '../styles/custom-styled-components';
 
 export default () => (
-  <aside style={{ position: 'fixed', top: '30%' }} className="menu is-hidden-touch has-text-centered">
+  <FixedBar className="menu is-hidden-touch has-text-centered">
     <ul className="menu-list">
       {SidebarData.map(el => (
         <li
@@ -18,5 +19,5 @@ export default () => (
         </li>
       ))}
     </ul>
-  </aside>
+  </FixedBar>
 );
