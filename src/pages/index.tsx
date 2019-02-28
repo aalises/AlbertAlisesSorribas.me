@@ -35,7 +35,7 @@ const Main = () => {
       </Helmet>
       <FixedHeaderContainer>
         <BackgroundImage Tag="section" fluid={data.background.childImageSharp.fluid}>
-          <Header name="Albert Alises Sorribas" role="Software Developer" />
+          <Header name="Albert Alises Sorribas" role="Software Developer. VR, Web and whatnot" />
         </BackgroundImage>
       </FixedHeaderContainer>
       <ContentContainer>
