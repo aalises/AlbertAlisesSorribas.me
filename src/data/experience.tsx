@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Img from 'gatsby-image';
+import { PaddingContainer } from '../styles/custom-styled-components';
 
 const QMENTA: ExperienceData = {
   id: 'QMENTA',
@@ -83,7 +84,7 @@ const QMENTA: ExperienceData = {
             <figcaption>Register view of the QMENTA Platform (Front-end with React).</figcaption>
           </figure>
         </div>
-        <div className="tile is-parent" style={{ padding: '3rem 0rem !important' }}>
+        <PaddingContainer padding="3rem 0rem !important" className="tile is-parent">
           <div className="tile is-child is-6">
             <figure className="image">
               <Img fluid={data['QMENTA_2'].childImageSharp.fluid} />
@@ -95,7 +96,7 @@ const QMENTA: ExperienceData = {
               <Img fluid={data['QMENTA_3'].childImageSharp.fluid} />
             </figure>
           </div>
-        </div>
+        </PaddingContainer>
         <div className="tile is-child">
           <figure className="image">
             <Img fluid={data['QMENTA_4'].childImageSharp.fluid} />

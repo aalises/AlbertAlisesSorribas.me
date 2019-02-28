@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import { Helmet } from 'react-helmet';
+import { FixedHeaderContainer, ContentContainer } from '../styles/custom-styled-components';
 
 import Experience from './Experience';
 import Education from './Education';
@@ -21,11 +22,11 @@ const Main = () => (
       <title>Hi, I'm Albert Alises</title>
       <meta name="description" content="Personal Website of Albert Alises Sorribas" />
     </Helmet>
-    <div>
+    <FixedHeaderContainer>
       <Header name="Albert Alises Sorribas" role="Software Developer" />
-    </div>
-    <div>
-      <div className="column is-three-fifths is-offset-2">
+    </FixedHeaderContainer>
+    <ContentContainer>
+      <div className="column is-two-thirds is-offset-2">
         <SectionBar />
         <Experience />
         <Education />
@@ -33,7 +34,7 @@ const Main = () => (
         <Honors />
         <Contact />
       </div>
-    </div>
+    </ContentContainer>
     <Footer />
   </section>
 );

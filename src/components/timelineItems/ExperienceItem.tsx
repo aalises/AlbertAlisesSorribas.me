@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Img from 'gatsby-image';
+import { PaddingContainer, SpecialFontText } from '../../styles/custom-styled-components';
 
 export default ({
   id,
@@ -34,7 +35,7 @@ export default ({
           <h6 className="subtitle is-size-6">
             <i>{place}</i>
           </h6>
-          <div className="content" style={{ fontSize: '14px' }}>
+          <SpecialFontText fontSize="14px" className="content">
             <h2 className="title is-size-6 has-text-grey-dark">Responsabilities</h2>
             <ul>
               {responsabilities.map((el, idx) => (
@@ -53,10 +54,10 @@ export default ({
                 <li key={`acc-${idx}`}>{el}</li>
               ))}
             </ul>
-            <div className="box" style={{ paddingTop: '3rem' }}>
+            <PaddingContainer padding="3rem 0 0 0" className="box">
               {additional_content(images)}
-            </div>
-          </div>
+            </PaddingContainer>
+          </SpecialFontText>
         </div>
       </div>
     </div>
