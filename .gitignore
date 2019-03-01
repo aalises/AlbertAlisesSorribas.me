@@ -3,3 +3,4 @@ node_modules
 .eslintcache
 public/
 .cache/
+.DS_Store
