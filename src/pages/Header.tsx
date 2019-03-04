@@ -27,7 +27,7 @@ const Header = ({ name, role }: any) => {
       query={dataQuery}
       render={data => (
         <div id="section-Header" className="container has-text-centered">
-          <MarginContainer margin="4rem 5% 0 0" className="column">
+          <MarginContainer margin="4rem 0 0 0" className="column">
             <div className="columns is-vcentered reverse-column-order">
               <div className="column">
                 <animated.h1 className="title is-size-1 title-background" style={animation}>
