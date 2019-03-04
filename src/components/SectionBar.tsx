@@ -1,6 +1,8 @@
 import * as React from 'react';
 import SidebarData from '../data/sidebar';
 
+const ScrollOffset = 45;
+
 export default () => (
   <div className="breadcrumb is-centered has-bullet-separator">
     <ul className="is-size-6">
@@ -8,8 +10,10 @@ export default () => (
         <li key={`sidebar-${el}`}>
           <a
             onClick={() =>
-              window.scroll({
-                top: document.getElementById(`section-${el}`).offsetTop,
+              window.scrollBy({
+                top:
+                  document.getElementById(el === 'Header' ? 'main' : `section-${el}`).getBoundingClientRect().top -
+                  ScrollOffset,
                 behavior: 'smooth',
               })
             }

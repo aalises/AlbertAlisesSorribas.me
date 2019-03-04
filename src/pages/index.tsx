@@ -26,7 +26,7 @@ const HeaderBackgroundImage = graphql`
 const Main = () => {
   const data = useStaticQuery(HeaderBackgroundImage);
   return (
-    <section className="hero is-default is-bold">
+    <section className="hero is-default is-bold" id="main">
       <Helmet>
         <html lang="en" />
         <meta charSet="utf-8" />
