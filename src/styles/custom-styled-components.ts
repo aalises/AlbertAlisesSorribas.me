@@ -21,7 +21,7 @@ const FixedHeaderContainer = styled.div`
   position: fixed;
   width: 100%;
   background: aliceblue;
-  min-width: 388px;
+  min-width: 333px;
   section {
     padding-bottom: 3rem;
   }
@@ -30,8 +30,11 @@ const FixedHeaderContainer = styled.div`
 const ContentContainer = styled.div`
   position: relative;
   margin-top: 30.7rem;
-  @media (max-width: 727px) {
+  @media (max-width: 727px) and (min-width: 385px) {
     margin-top: 34rem;
+  }
+  @media (max-width: 384px) {
+    margin-top: 37rem;
   }
   background: white;
 `;
