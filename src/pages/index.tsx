@@ -2,29 +2,18 @@ import React from 'react';
 import Header from './Header';
 import { Helmet } from 'react-helmet';
 import { FixedHeaderContainer, ContentContainer } from '../styles/custom-styled-components';
-import BackgroundImage from 'gatsby-background-image';
-import { graphql, useStaticQuery } from 'gatsby';
 import Experience from './Experience';
 import Education from './Education';
 import Skills from './Skills';
 import Honors from './Honors';
 import Contact from './Contact';
-
+import ParticlesData from '../data/particles_data';
 import Footer from '../components/Footer';
 import SectionBar from '../components/SectionBar';
-
+import Particles from 'react-particles-js';
 import '../styles/index.sass';
 
-const HeaderBackgroundImage = graphql`
-  query {
-    background: file(relativePath: { eq: "background_cloud.jpg" }) {
-      ...fluidImage
-    }
-  }
-`;
-
 const Main = () => {
-  const data = useStaticQuery(HeaderBackgroundImage);
   return (
     <section className="hero is-default is-bold" id="main">
       <Helmet>
@@ -34,9 +23,8 @@ const Main = () => {
         <meta name="description" content="Personal Website of Albert Alises Sorribas" />
       </Helmet>
       <FixedHeaderContainer>
-        <BackgroundImage Tag="section" fluid={data.background.childImageSharp.fluid}>
-          <Header name="Albert Alises Sorribas" role="Software Developer. VR, Web and whatnot" />
-        </BackgroundImage>
+        <Particles params={ParticlesData} style={{ position: 'fixed' }} />
+        <Header name="Albert Alises Sorribas" role="Software Developer. VR, Web and whatnot" />
       </FixedHeaderContainer>
       <ContentContainer>
         <div className="column is-two-thirds is-offset-2">
