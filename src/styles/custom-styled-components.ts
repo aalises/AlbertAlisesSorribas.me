@@ -20,17 +20,15 @@ const SpecialFontText = styled.div`
 const FixedHeaderContainer = styled.div`
   position: fixed;
   width: 100%;
-  background: aliceblue;
+  background: #f8f8f8;
   min-width: 333px;
-  section {
-    padding-bottom: 3rem;
-  }
+  padding-bottom: 3rem;
 `;
 
 const ContentContainer = styled.div`
   position: relative;
   margin-top: 30.7rem;
-  @media (max-width: 727px) and (min-width: 385px) {
+  @media (max-width: 653px) and (min-width: 385px) {
     margin-top: 34rem;
   }
   @media (max-width: 384px) {
