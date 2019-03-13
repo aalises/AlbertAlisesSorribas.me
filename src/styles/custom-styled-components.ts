@@ -28,11 +28,11 @@ const FixedHeaderContainer = styled.div`
 const ContentContainer = styled.div`
   position: relative;
   margin-top: 30.7rem;
-  @media (max-width: 653px) and (min-width: 385px) {
-    margin-top: 34rem;
+  @media (max-width: 691px) and (min-width: 389px) {
+    margin-top: 35rem;
   }
-  @media (max-width: 384px) {
-    margin-top: 37rem;
+  @media (max-width: 389px) {
+    margin-top: 39rem;
   }
   background: white;
 `;
