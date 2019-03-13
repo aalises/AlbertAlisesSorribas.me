@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+const breakpoints = {
+  mobile: '333px',
+  folding_max: '691px',
+  folding_min: '389px',
+};
+
 const MarginContainer = styled.div`
   margin: ${props => props.margin || '0'};
 `;
@@ -21,17 +27,17 @@ const FixedHeaderContainer = styled.div`
   position: fixed;
   width: 100%;
   background: #f8f8f8;
-  min-width: 333px;
+  min-width: ${breakpoints.mobile};
   padding-bottom: 3rem;
 `;
 
 const ContentContainer = styled.div`
   position: relative;
   margin-top: 30.7rem;
-  @media (max-width: 691px) and (min-width: 389px) {
+  @media (max-width: ${breakpoints.folding_max}) and (min-width: ${breakpoints.folding_min}) {
     margin-top: 35rem;
   }
-  @media (max-width: 389px) {
+  @media (max-width: ${breakpoints.folding_min}) {
     margin-top: 39rem;
   }
   background: white;
