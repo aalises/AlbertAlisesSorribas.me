@@ -26,7 +26,7 @@ const SpecialFontText = styled.div`
 const FixedHeaderContainer = styled.div`
   position: fixed;
   width: 100%;
-  background: #f8f8f8;
+  background: #f2f2f2;
   min-width: ${breakpoints.mobile};
   padding-bottom: 3rem;
 `;
@@ -35,10 +35,10 @@ const ContentContainer = styled.div`
   position: relative;
   margin-top: 30.7rem;
   @media (max-width: ${breakpoints.folding_max}) and (min-width: ${breakpoints.folding_min}) {
-    margin-top: 35rem;
+    margin-top: 34rem;
   }
   @media (max-width: ${breakpoints.folding_min}) {
-    margin-top: 39rem;
+    margin-top: 37rem;
   }
   background: white;
 `;
